@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Budget Expense Tracker</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+  <div class="container-main">
+    <h1>Budget Expense Tracker</h1>
+    <div class="blank"></div>
+  <div class="container-expense">
+    <label for="expense-input">Expense Amount:</label>
+    <input type="number" id="expense-input" placeholder="Enter Amount"><br>
+    <label for="category">Expense Category:</label>
+    <select id="category">
+      <option value="House Rent">House Rent</option>
+      <option value="Fule">Fule</option>
+      <option value="Foods">Foods</option>
+      <option value="Car Allowance">Car Allowance</option>
+      <option value="Electric Bills">Electric Bills</option>
+      <option value="Medicine">Medicine</option>
+      <option value="Vactions">Vactions</option>
+    </select><br>
+    <label for="date">Payment Date:</label>
+    <input type="date" id="date"><br>
+    <button id="done-btn">DONE</button>
+  </div>
+
+  <div class="history-container">
+    <h2>History List:</h2>
+    <div class="container-list">
+    <table>
+      <thead>
+        <tr>
+          <th>Amount</th>
+          <th>Category</th>
+          <th>Date</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody id="expense-tbody">
+        <tr>
+
+
+        </tr>
+
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Total:</td>
+          <td id="Total Amount"></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+  </div>
+    
+
+  <script src="app.js"></script>
+</body>
+
+</html>
+
